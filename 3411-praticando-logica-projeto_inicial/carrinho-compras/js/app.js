@@ -20,8 +20,8 @@ function adicionar() {
     //calc the price and subtotal
 
     
-    valorSubTotal += Number(valorProdutoSelecionado);
-    var total = valorSubTotal*(quantidade == 0? 1 : quantidade);
+    valorSubTotal += Number(valorProdutoSelecionado*(quantidade == 0? 1 : quantidade));
+    var total = valorSubTotal;
 
     //add to the shopping cart
     const carrinho = document.querySelector('.carrinho__produtos__produto');
@@ -42,6 +42,9 @@ function adicionar() {
     valorTotal.innerHTML = `
     R$${total}
     `   
+
+    //update the quantity to zero
+    document.querySelector('#quantidade').value = 1;
 }
 
 function limpar() {
