@@ -7,7 +7,6 @@ document.querySelector('.carrinho__produtos__produto').innerHTML =
 </section>
 `
 
-
 function adicionar() {
     //get the values of product's name, quantity and value
     const produtoSelecionado = document.querySelector('#produto');
