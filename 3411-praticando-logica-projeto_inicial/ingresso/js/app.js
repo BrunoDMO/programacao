@@ -6,6 +6,9 @@ function comprar() {
     var novaQtd = NovaQtd(qtdLugarEscolhido.textContent,qtd);
 
     qtdLugarEscolhido.textContent <= 0 ? Esgotado(qtdLugarEscolhido) : qtdLugarEscolhido.innerHTML = novaQtd ;
+    var novaQtd = NovaQtd(qtdLugarEscolhido.textContent,qtd);
+
+    qtdLugarEscolhido.textContent <= 0 ? Esgotado(qtdLugarEscolhido) : qtdLugarEscolhido.innerHTML = novaQtd ;
 }
 
 function Esgotado(ingresso) {
