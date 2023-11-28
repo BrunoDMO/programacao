@@ -3,11 +3,25 @@ function comprar() {
     const tiposLista = document.querySelector('.lista');
     const qtd = document.querySelector('#qtd').value;
     const qtdLugarEscolhido = document.querySelector(`#qtd-${tipoIngresso}`);
-    var novaQtd = Number(qtdLugarEscolhido.textContent) - qtd;
-    qtdLugarEscolhido.textContent != 0 ? qtdLugarEscolhido.innerHTML = novaQtd : Esgotado(qtdLugarEscolhido);
+    var novaQtd = NovaQtd(qtdLugarEscolhido.textContent,qtd);
+
+    qtdLugarEscolhido.textContent <= 0 ? Esgotado(qtdLugarEscolhido) : qtdLugarEscolhido.innerHTML = novaQtd ;
 }
 
 function Esgotado(ingresso) {
     ingresso.innerHTML = 0;
-    alert(`Ingresso ${ingresso.parentElement.innerText.split(ingresso.innerText)[0]} esta esgotado`);
+    //alert(`Ingresso ${ingresso.parentElement.innerText.split(ingresso.innerText)[0]} esta esgotado`);
+}
+function NovaQtd(valorIngresso, quantidade){
+    if(Number(valorIngresso) < quantidade){
+        alert(`
+        Não foi possível efetuar a compra.
+        Você pode estar tentando comprar mais ingressos
+        do que estão disponíveis ou
+        Os ingressos podem estar esgotados.
+        `);
+        return valorIngresso;
+    } else{
+        return Number(valorIngresso) - quantidade;
+    }
 }
