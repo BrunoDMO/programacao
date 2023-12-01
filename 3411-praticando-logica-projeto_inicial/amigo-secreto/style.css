@@ -82,7 +82,7 @@ body {
   width: 453px;
 }
 
-.friends__container > p {
+.friends__container>p {
   color: #fff;
   font-size: 21px;
   font-weight: 400;
@@ -196,11 +196,55 @@ body {
   margin: 0 0 80px 0;
 }
 
-.section__title > span {
+.section__title>span {
   color: #1875e8;
 }
 
 .secondary {
   background-color: #fff;
   color: #1875e8;
+}
+
+@media (max-width: 1300px) {
+  body {
+    min-height: 100vh;
+    position: relative;
+  }
+  .section--results{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+  } 
+  .section__title{
+    padding-top: 50px;
+    font-size: 50px;
+  }
+  .form__input{
+    max-width: 80%;
+  }
+  .friends__container{
+    max-width: 40%;
+  }
+
+  .content__main {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    padding: 10px;
+    max-height: fit-content;
+  }
+  .content{
+    max-height: 100%;
+  }
+  .form__buttons{
+    flex-direction: column;
+  }
+  .page__image{
+    max-width: 0px;
+    max-height: 0px;
+  }
+  .prizeDraw__title{
+    margin-top: 40px;
+  }
 }
