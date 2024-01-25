@@ -7,53 +7,82 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PrincipalComBusca {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_BLACK = "\u001B[30m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
+    public static final String ANSI_WHITE = "\u001B[37m";
     public static void main(String[] args) throws IOException, InterruptedException {
         Scanner leitura = new Scanner(System.in);
         HttpClient client = HttpClient.newHttpClient();
-        System.out.println("nome do filme:");
-        var busca = leitura.nextLine();
+        ArrayList<Titulo> titulos = new ArrayList<>();
+        var busca = "";
         var apiKey = "4d4da9d1";
-        String endereco = "https://www.omdbapi.com/?t="+busca.replace(" ","+")+"&apikey="+apiKey;
-        try {
-        //faz request na api
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(endereco))
-                .build();
 
-            HttpResponse<String> response = client
-                    .send(request, HttpResponse.BodyHandlers.ofString());
+        Gson gson = new GsonBuilder()
+                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                .setPrettyPrinting()
+                .create();
+        while(!busca.equalsIgnoreCase("sair")) {
 
-            if (response.statusCode() == 404) {
-                throw new ErroConsultaGitHubException("Usuário não encontrado no GitHub.");
+
+            System.out.println("nome do filme:");
+            busca = leitura.nextLine();
+            if (busca.equalsIgnoreCase("sair")){
+                break;
             }
+            try {
+                String endereco = "https://www.omdbapi.com/?t="+busca.replace(" ","+")+"&apikey="+apiKey;
+                //faz request na api
+                HttpRequest request = HttpRequest.newBuilder()
+                        .uri(URI.create(endereco))
+                        .build();
 
-            String json = response.body();
-            Gson gson = new GsonBuilder()
-                    .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                    .create();
-            TituloOmdb meuTituloOmdb = gson.fromJson(json, TituloOmdb.class);
-            System.out.println(meuTituloOmdb);
-            //converte tituloOmdb para formato titulo
-            Titulo meuTitulo = new Titulo(meuTituloOmdb);
-            //printa convertido
-            System.out.println(meuTitulo);
-        }catch (IllegalArgumentException elemento){
-            System.out.println("endereço invalido");
-        }catch (ErroDeConversaoDeAnoException elemento){
-            System.out.println("Ocorreu um erro: "+elemento.getMensagem());
-        }catch (NullPointerException elemento){
-            System.out.println("Filme não encontrado");
+                HttpResponse<String> response = client
+                        .send(request, HttpResponse.BodyHandlers.ofString());
+
+//                if (response.statusCode() == 404) {
+//                    throw new ErroConsultaGitHubException("Usuário não encontrado no GitHub.");
+//                }
+                String json = response.body();
+
+                TituloOmdb meuTituloOmdb = gson.fromJson(json, TituloOmdb.class);
+                System.out.println(meuTituloOmdb);
+                //converte tituloOmdb para formato titulo
+                Titulo meuTitulo = new Titulo(meuTituloOmdb);
+                //printa convertido
+                System.out.println(meuTitulo);
+                titulos.add(meuTitulo);
+
+            } catch (IllegalArgumentException elemento) {
+                System.out.println(ANSI_RED + "endereço invalido" + ANSI_RESET);
+            } catch (ErroDeConversaoDeAnoException elemento) {
+                System.out.println(ANSI_RED + "Ocorreu um erro: " + elemento.getMensagem() + ANSI_RESET);
+            } catch (NullPointerException elemento) {
+                System.out.println(ANSI_RED + "Filme não encontrado" + ANSI_RESET);
+            }
+            System.out.println(ANSI_GREEN + "Programa finalizou com sucesso!" + ANSI_RESET);
         }
-        System.out.println("Programa finalizou com sucesso!");
+        System.out.println(titulos);
+        FileWriter escrita = new FileWriter("Filme.txt");
+        escrita.write(gson.toJson(titulos));
+        escrita.close();
+
 
 //        //***********************************************************Livro
 //        System.out.println("Nome do Livro");

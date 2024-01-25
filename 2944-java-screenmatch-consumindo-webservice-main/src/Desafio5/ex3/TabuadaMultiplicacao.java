@@ -1,4 +1,4 @@
-package Desafio5;
+package Desafio5.ex3;
 
 public class TabuadaMultiplicacao implements Tabuada {
     private int numero;

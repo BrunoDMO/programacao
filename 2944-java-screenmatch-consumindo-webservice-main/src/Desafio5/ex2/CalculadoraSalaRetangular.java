@@ -1,4 +1,4 @@
-package Desafio5;
+package Desafio5.ex2;
 
 public class CalculadoraSalaRetangular implements CalculoGeometrico {
     @Override

@@ -1,2 +1,5 @@
-package Desafio5.ex6;public interface Vendavel {
+package Desafio5.ex6;
+
+public interface Vendavel {
+    void precoFinal();
 }

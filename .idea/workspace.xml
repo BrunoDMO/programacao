@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2d0b9fe-c32e-487b-b9ce-74b9b60633fa" name="Changes" comment="exercises" />
+    <list default="true" id="f2d0b9fe-c32e-487b-b9ce-74b9b60633fa" name="Changes" comment="exercises">
+      <change afterPath="$PROJECT_DIR$/OrientacaoObjeto/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrientacaoObjeto/src/APIBored.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrientacaoObjeto/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/colors.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/colors.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Principal3.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Principal3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Titulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Veiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/BuscaCep.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/BuscaCep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/CepNaoEncontradoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/CepNaoEncontradoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/GeradorDeArquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/GeradorDeArquivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/Principal4.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/Principal4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/RecordCep.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/RecordCep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/br/com/alura/screenmatch/principal/PrincipalComBusca.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/br/com/alura/screenmatch/principal/PrincipalComBusca.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,9 +51,24 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Estudando Java/programacao/JAVA/Primeiro projeto&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Estudando Java/programacao&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="programacao" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="programacao" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -1,4 +1,4 @@
-package Desafio5;
+package Desafio5.ex1;
 
 public class ConversorMoeda implements ConversaoFinanceira{
     private double real = 5.17;
