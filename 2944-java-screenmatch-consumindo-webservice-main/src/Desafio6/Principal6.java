@@ -1,5 +1,9 @@
 package Desafio6;
 
+import Desafio6.Modelos.ListaCurtidas;
+import Desafio6.Modelos.Musica;
+import Desafio6.Modelos.Podcast;
+
 public class Principal6 {
     public static void main(String[] args) {
         //create the favorite list

@@ -1,6 +1,8 @@
-package Desafio6;
+package Desafio6.Modelos;
 
-public class Podcast extends Audio implements Avaliavel{
+import Desafio6.Interface.Avaliavel;
+
+public class Podcast extends Audio implements Avaliavel {
     private String apresentador;
     private String intrevistado;
 

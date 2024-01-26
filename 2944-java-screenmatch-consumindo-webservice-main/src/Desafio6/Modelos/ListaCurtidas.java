@@ -1,4 +1,4 @@
-package Desafio6;
+package Desafio6.Modelos;
 
 import java.util.ArrayList;
 

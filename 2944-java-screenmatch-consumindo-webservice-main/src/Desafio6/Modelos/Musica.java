@@ -1,6 +1,8 @@
-package Desafio6;
+package Desafio6.Modelos;
 
-public class Musica extends Audio implements Avaliavel{
+import Desafio6.Interface.Avaliavel;
+
+public class Musica extends Audio implements Avaliavel {
     private String artista;
     private String genero;
 
