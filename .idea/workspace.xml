@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2d0b9fe-c32e-487b-b9ce-74b9b60633fa" name="Changes" comment="exercises">
-      <change afterPath="$PROJECT_DIR$/OrientacaoObjeto/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrientacaoObjeto/src/APIBored.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrientacaoObjeto/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/colors.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/colors.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Principal3.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Principal3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Titulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio3/Veiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/BuscaCep.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/BuscaCep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/CepNaoEncontradoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/CepNaoEncontradoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/GeradorDeArquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/GeradorDeArquivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/Principal4.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/Principal4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/RecordCep.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio4/RecordCep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/br/com/alura/screenmatch/principal/PrincipalComBusca.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/br/com/alura/screenmatch/principal/PrincipalComBusca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio6/Interface/Avaliavel.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/desafio_criacao_lista_de_favoritos_com_interface/Interface/Avaliavel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio6/Modelos/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/desafio_criacao_lista_de_favoritos_com_interface/Modelos/Audio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio6/Modelos/ListaCurtidas.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/desafio_criacao_lista_de_favoritos_com_interface/Modelos/ListaCurtidas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio6/Modelos/Musica.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/desafio_criacao_lista_de_favoritos_com_interface/Modelos/Musica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio6/Modelos/Podcast.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/desafio_criacao_lista_de_favoritos_com_interface/Modelos/Podcast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/Desafio6/Principal6.java" beforeDir="false" afterPath="$PROJECT_DIR$/2944-java-screenmatch-consumindo-webservice-main/src/desafio_criacao_lista_de_favoritos_com_interface/Principal6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,15 +37,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Estudando Java/programacao&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Estudando Java/programacao/3257-java-desafio-main-spring-data-jpa"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="programacao" />

@@ -1,6 +1,6 @@
-package Desafio6.Modelos;
+package desafio_criacao_lista_de_favoritos_com_interface.Modelos;
 
-import Desafio6.Interface.Avaliavel;
+import desafio_criacao_lista_de_favoritos_com_interface.Interface.Avaliavel;
 
 public class Podcast extends Audio implements Avaliavel {
     private String apresentador;

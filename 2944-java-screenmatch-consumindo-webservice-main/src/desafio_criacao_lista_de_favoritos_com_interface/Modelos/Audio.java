@@ -1,6 +1,4 @@
-package Desafio6.Modelos;
-
-import java.util.ArrayList;
+package desafio_criacao_lista_de_favoritos_com_interface.Modelos;
 
 public class Audio {
     private String titulo;

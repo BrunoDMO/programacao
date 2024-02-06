@@ -1,8 +1,8 @@
-package Desafio6;
+package desafio_criacao_lista_de_favoritos_com_interface;
 
-import Desafio6.Modelos.ListaCurtidas;
-import Desafio6.Modelos.Musica;
-import Desafio6.Modelos.Podcast;
+import desafio_criacao_lista_de_favoritos_com_interface.Modelos.ListaCurtidas;
+import desafio_criacao_lista_de_favoritos_com_interface.Modelos.Musica;
+import desafio_criacao_lista_de_favoritos_com_interface.Modelos.Podcast;
 
 public class Principal6 {
     public static void main(String[] args) {

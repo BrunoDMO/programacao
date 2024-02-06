@@ -1,4 +1,4 @@
-package Desafio6.Modelos;
+package desafio_criacao_lista_de_favoritos_com_interface.Modelos;
 
 import java.util.ArrayList;
 
